@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/bca08f2a2f.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="" alt="" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+
+                <h1>Hi all, I'm <span>Prakash Rajput</span> <br>from India</h1>
+            </div>
+        </div>
+    </div>
+    <!------------about---------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/ProfileCopy.jpg" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About me</h1>
+                    <h2>
+                        I am a passionate MERN Stack developer currently pursuing my Master's
+                        in Computer Applications at NIT Raipur. With a strong foundation in MERN
+                        (MongoDB, Express.js, React, Node.js) technology stack. I have successfully
+                        crafted numerous projects that demonstrate my expertise and commitment to
+                        delivering high-quality web applications.
+
+                    </h2>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li>
+                                <span>UI?UX</span><br>Designing Web/App interfaces
+                            </li>
+                            <li>
+                                <span>Web Development</span><br>Web app Development
+                            </li>
+                            <li>
+                                <span>App Development</span><br>Building Android/iOS apps
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li>
+                                National Institute Of Technology, Raipur<br><span>Master of Computer Applications
+                                    (MCA)</span>
+                            </li>
+                            <li>
+                                Shri Gujrati Samaj Inst. Of Pro. Studies, Indore (M.P.) <br><span>Bechelor of Computer
+                                    Applications (BCA)</span>
+                            </li>
+                            <li>
+                                Govt. Bal Vinay Mandir H. S. Excellence School, Indore (M.P.) <br><span>Intermediate
+                                    (12th)</span>
+                            </li>
+                            <li>
+                                M.P. Police Public School, Indore (M.P.) <br><span>High School (10th)</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!------services------>
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>I am on a mission to bring dynamic and seamless web applications to life.</p>
+                    <a href="#">learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>I am on a mission to bring dynamic and seamless web applications to life.</p>
+                    <a href="#">learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store-ios"></i>
+                    <h2>App Design</h2>
+                    <p>I am on a mission to bring dynamic and seamless web applications to life.</p>
+                    <a href="#">learn more</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-------portfolio------->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.png" alt="">
+                    <div class="layer">
+                        <h3>Social Media Web Application</h3>
+                        <p>It is a dynamic web application developed using MERN stack. Developed user profiles for each
+                            registered user, allowing them to customize their profiles with profile picture, bio and
+                            personal information. Enabled users to edit and update their profile details easily. </p>
+                        <a href="https://github.com/Prakash9399/socialmedia"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.png" alt="">
+                    <div class="layer">
+                        <h3>React Card Game</h3>
+                        <p>It's a ReactJS game where you match pairs of cards. Click on two cards; if their images
+                            match, they stay face up and game is over , otherwise they flip back. The goal is to match
+                            any two cards with the fewest turns. </p>
+                        <a href="https://prakash9399.github.io/react-card-game/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.png" alt="">
+                    <div class="layer">
+                        <h3>Personal Portfolio Website</h3>
+                        <p>Designed and developed a my personal portfolio website showcasing my skills and projects. </p>
+                        <a href="https://prakash9399.github.io/Portfolio/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="" class="btn">See more</a>
+        </div>
+    </div>
+
+    <!-----contact----->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>rajputprakash9399@gmail.com</p>
+                    <p><i class="fa-solid fa-phone-volume"></i>9399043336</p>
+                    <div class="social-icons">
+                        <a href="https://www.instagram.com/prakashrajput__17/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/prakash-rajput-a3b533243/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/Prakash9399"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                    <a href="images/my-cv.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright <i class="fa-solid fa-heart"></i></p>
+        </div>
+    </div>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link")
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab")
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+        function openmenu() {
+            sidemenu.style.right = "0";
+        }
+        function closemenu() {
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycby455H166qnnK6wJ9nNVhY7zAfCN9AnFHF230NxFyE0uNeB9Oq9hcmyQ4a18LJvJ5hC/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML = "Message sent sucessfully "
+                    setTimeout(function () {
+                        msg.innerHTML = ""
+                    }, 5000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+
+</body>
+
+</html>
